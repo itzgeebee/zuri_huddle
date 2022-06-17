@@ -1,0 +1,352 @@
+/* variables */
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --opensans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+/* reset */
+body, section, p, a, ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: var(--opensans);
+}
+
+h1, h2{
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* base styles */
+body{
+    font-size: 16px;
+    min-height: 100vh;
+    max-width: 100%;
+}
+.first{
+    background: url(images/bg-hero-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--very-pale-cyan);
+}
+
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.2em;
+}
+
+.btns{
+    background: var(--pink);
+    color: var(--very-pale-cyan);
+    padding: 6px 12px;
+    text-transform: capitalize;
+    display: inline-block;
+    border-radius: 25px;
+}
+.btns:hover{
+    cursor: pointer;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    padding: 20px 30px;
+    place-items: center;
+}
+
+.page-top{
+    padding: 25px 20px 25px 20px;
+    align-content: end;
+}
+.top-img{
+    grid-column: 1/4;
+}
+.top-btn{
+    grid-column: 6/9;
+    align-items:flex-end;
+}
+
+
+.page-top img{
+    width: 100%;
+}
+.page-top .btns{
+    background: #fff;
+    color: var(--very-dark-cyan);
+    font-weight: 700;
+    border: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    padding: 5px 15px;
+    font-size: 0.7em;
+}
+
+.intro{
+    padding: 20px 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro div{
+    grid-column: span 8;
+    
+}
+.intro .btns{
+    padding: 15px 50px;
+    margin: 35px 0;
+    border: 0;
+}
+
+.intro img{
+    width: 100%;
+}
+.intro p, .grow p{
+    line-height: 1.5;
+}
+
+.grow, .flowing, .users{
+    padding: 40px 20px;
+    margin: 0 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 1px -2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.grow div, .flowing div, .users div{
+    grid-column: span 8;
+    
+}
+.grow img, .flowing img, .users img{
+    width: 100%;
+}
+
+.cta{
+    position: relative;
+    margin-top: 270px;
+    padding: 0 50px;
+    
+}
+.pre-footer{
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 1px -3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: -70px;
+    background-color: #fff;
+    max-width: 80%;
+}
+.pre-footer .build{
+    grid-column: span 8;
+}
+.build h2{
+    font-size: 0.8em;
+}
+.pre-footer .btns{
+    padding: 15px 40px;
+    margin: 20px 0;
+    border: 0;
+    font-size: 0.8em;
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+footer{
+    text-align: left;
+    background-color: var(--very-dark-cyan);
+}
+#footer{
+    padding: 150px 20px 40px 20px;
+    text-align: left;
+}
+footer div{
+    grid-column: span 8;
+    color: #fff;
+}
+footer .footer-img{
+    padding-bottom: 10px;
+}
+.footer-img img{
+    width: 40%;
+}
+.contact li{
+    padding: 10px;
+    display: flex;
+    line-height: 1.6;
+}
+.contact span{
+    padding-right:20px;
+    padding-top: 5px;
+}
+
+#footer div ul{
+    padding: 20px 0;
+}
+
+#footer div li{
+    padding-top: 15px;
+}
+#footer div li:hover{
+
+}
+#footer a{
+    color: #fff;
+}
+.socials{
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top:20px;
+}
+.socials a{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 100%;
+    font-size: 0.9em;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.7em;
+}
+@media screen and (min-width: 960px) {
+    body{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 1.8em;
+    }
+    h2{
+        font-size: 1.6em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+    .first{
+        background: url(images/bg-hero-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: var(--very-pale-cyan);
+        margin-bottom: 200px;
+    }
+    
+    .page-top{
+        padding: 40px 0px 35px 0px;
+    }
+    .page-top .btns{
+        background: #fff;
+        color: var(--very-dark-cyan);
+        font-weight: 700;
+        border: 0;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+        padding: 10px 30px;
+        font-size: 1em;
+    }
+    .intro{
+        padding-left:90px;
+        padding-right: 90px;
+        text-align: left;
+    }
+    .intro div{
+        grid-column: span 4;
+        padding: 40px;
+    }
+    .intro .btns{
+        padding: 15px 80px;
+        margin: 35px 0;
+        border: 0;
+        font-size: 1.2em;
+    }
+    .grow, .flowing, .users{
+        padding-left:100px;
+        padding-right: 100px;
+        margin: 0 90px;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+    .grow div, .flowing div, .users div{
+        padding: 80px;
+    }
+    .grow .grow-img{
+        grid-column: 5/9;
+        grid-row: 3;
+    }
+    .grow .grow-text{
+        grid-column: 1/5;
+        grid-row: 3;
+    }
+    .flowing div{
+        grid-column: span 4;
+    }
+    .users .users-img{
+        grid-column: 5/9;
+        grid-row: 5;
+    }
+    .users .users-text{
+        grid-column: 1/5;
+        grid-row: 5;
+    }
+    .cta{
+        margin-top: 400px;
+    }
+    .build h2{
+        font-size: 1.3em;
+    }
+    .pre-footer{
+        padding: 40px 200px;
+    }
+    .pre-footer .btns{
+        padding: 15px 40px;
+        margin: 20px 0;
+        border: 0;
+        font-size: 1.28em;
+        box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.25);
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        column-gap: 40px;
+        padding-left: 100px;
+    }
+    #footer .footer-img{
+        grid-row: 1;
+        grid-column:1/3;
+    }
+    #footer .contact{
+        grid-row: 2;
+        grid-column:1/3;
+    }
+    #footer .footer-links{
+        grid-row: 2;
+        grid-column:4/6;
+    }
+    .links-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+    .links-list li{
+        grid-column: span 2;
+    }
+    #footer .socials{
+        grid-row: 2;
+        grid-column:6/9;
+    }
+    .copyright{
+        font-size: 0.9em;
+        text-align: right;
+        padding-right: 90px;
+    }
+}
