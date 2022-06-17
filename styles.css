@@ -119,7 +119,7 @@ h2{
     margin: 0 20px;
     margin-bottom: 40px;
     text-align: center;
-    box-shadow: 1px -2px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
@@ -140,7 +140,7 @@ h2{
 .pre-footer{
     padding: 20px 40px;
     text-align: center;
-    box-shadow: 1px -3px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     text-transform: capitalize;
     position: absolute;
@@ -159,7 +159,7 @@ h2{
     margin: 20px 0;
     border: 0;
     font-size: 0.8em;
-    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 
 footer{
@@ -197,9 +197,7 @@ footer .footer-img{
 #footer div li{
     padding-top: 15px;
 }
-#footer div li:hover{
 
-}
 #footer a{
     color: #fff;
 }
@@ -207,13 +205,19 @@ footer .footer-img{
     text-align: center;
     padding-bottom: 40px;
     padding-top:20px;
+    
 }
 .socials a{
-    padding: 5px;
+    font-size: 1em;
+}
+.socials div{
+    display: inline;
+    width: 100px;
+    height: auto;
+    padding: 12px;
     margin: 5px;
     border: 1px solid white;
     border-radius: 100%;
-    font-size: 0.9em;
 }
 
 .copyright {
